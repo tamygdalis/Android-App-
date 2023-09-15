@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crud">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <EditText
+            android:id="@+id/editid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_marginTop="45dp"
+
+            android:importantForAutofill="no" />
+        <EditText
+            android:layout_below="@+id/editid"
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_marginTop="8dp"
+
+            android:importantForAutofill="no" />
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_below="@id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+
+            android:id="@+id/editAge"
+            android:layout_below="@id/editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:layout_centerHorizontal="true"
+            android:ems="12"
+            android:layout_marginTop="8dp"/>
+
+
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/editAge"
+            android:minWidth="150dp"
+            android:layout_centerInParent="true"
+            android:text="Save User"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:minWidth="150dp"
+            android:layout_centerInParent="true"
+            android:text="List users"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnupdate"
+            android:layout_below="@id/btnList"
+            android:minWidth="150dp"
+            android:layout_centerInParent="true"
+            android:text="Update User"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btndelete"
+            android:layout_below="@id/btnupdate"
+            android:minWidth="150dp"
+            android:layout_centerInParent="true"
+            android:text="Delete users"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnphotos"
+            android:layout_below="@id/btndelete"
+            android:minWidth="150dp"
+            android:layout_centerInParent="true"
+            android:text=" Photos"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnmaps"
+            android:layout_below="@id/btnphotos"
+            android:minWidth="150dp"
+            android:layout_centerInParent="true"
+            android:text=" Maps"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginTop="25dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
